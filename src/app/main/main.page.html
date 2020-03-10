@@ -1,0 +1,37 @@
+<ion-header>
+  
+  <ion-toolbar>
+    <header>
+      HELMET AUTHENTICATOR
+    </header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>OWNER: RENZ OCEO <br> PLATE NUMBER: 2033 UU</p>
+  <br> <br><br>
+    <div class="Sensors">
+      SENSOR 1 <ion-toggle color="tertiary" [(ngModel)]="sensor1value" class="sensortoggle1"></ion-toggle> <br>
+      SENSOR 2 <ion-toggle color="tertiary" [(ngModel)]="sensor2value" class="sensortoggle2"></ion-toggle> <br>
+      SENSOR 3 <ion-toggle color="tertiary" [(ngModel)]="sensor3value" class="sensortoggle3"></ion-toggle>
+    </div>
+
+   <ion-button
+      color=danger
+      expand=block
+      size=large
+      fill=solid
+      class="clickbutton"
+      (click)="buttonclick()"
+      [disabled]="!sensor1value || !sensor2value || !sensor3value">START MOTORCYCLE</ion-button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-button
+        size=large
+        (click)="gotohome()"
+        color=danger 
+        shape=round
+        class="logoutbutton"> LOGOUT </ion-button>
+</ion-footer>
