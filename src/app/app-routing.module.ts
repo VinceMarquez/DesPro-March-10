@@ -6,7 +6,11 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   {
     path: 'main', loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },  {
+    path: 'wifi',
+    loadChildren: () => import('./wifi/wifi.module').then( m => m.WifiPageModule)
   },
+
 ];
 
 @NgModule({
