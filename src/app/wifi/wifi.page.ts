@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Hotspot, HotspotNetwork } from '@ionic-native/hotspot/ngx';
-import { Platform } from '@ionic/angular'
+import { Platform } from '@ionic/angular';
+import { OpenNativeSettings } from '@ionic-native/open-native-settings/ngx';
 
 @Component({
   selector: 'app-wifi',
@@ -11,7 +12,7 @@ import { Platform } from '@ionic/angular'
 export class WifiPage {
   networks:HotspotNetwork[]=[];
 
-  constructor(private router:Router, public platform:Platform, public hotspot:Hotspot) 
+  constructor(private openNativeSettings: OpenNativeSettings, private router:Router, public platform:Platform, public hotspot:Hotspot) 
   { 
     this.platform.ready().then(()=>{
       this.hotspot.scanWifi().then((networks:HotspotNetwork[])=>{

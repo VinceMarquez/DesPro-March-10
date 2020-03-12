@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Hotspot } from '@ionic-native/hotspot/ngx';
 import { TurnoffPipe } from './turnoff.pipe';
+import { OpenNativeSettings } from '@ionic-native/open-native-settings/ngx';
 
 @NgModule({
   declarations: [AppComponent, TurnoffPipe],
@@ -19,7 +20,8 @@ import { TurnoffPipe } from './turnoff.pipe';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    Hotspot
+    OpenNativeSettings,
+    Hotspot,
   ],
   bootstrap: [AppComponent]
 })

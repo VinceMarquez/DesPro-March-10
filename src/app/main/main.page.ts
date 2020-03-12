@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { OpenNativeSettings } from '@ionic-native/open-native-settings/ngx';
 
 @Component({
   selector: 'app-main',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MainPage{
 
-  constructor(private router: Router) { }
+  constructor(private openNativeSettings: OpenNativeSettings, private router: Router) { }
   
   startmotorcycle(){
     this.router.navigate(['turnoff']);
@@ -20,6 +21,11 @@ export class MainPage{
 
   gotowifi(){
     this.router.navigate(['wifi']);
+  }
+
+  open(setting:string){
+    this.openNativeSettings.open(setting).then(val => {
+    })
   }
     
     
