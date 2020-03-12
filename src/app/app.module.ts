@@ -9,11 +9,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Hotspot } from '@ionic-native/hotspot/ngx';
-import { TurnoffPipe } from './turnoff.pipe';
 import { OpenNativeSettings } from '@ionic-native/open-native-settings/ngx';
 
 @NgModule({
-  declarations: [AppComponent, TurnoffPipe],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
