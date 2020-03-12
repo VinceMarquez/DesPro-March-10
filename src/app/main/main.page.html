@@ -17,13 +17,23 @@
     </div>
 
    <ion-button
-      color=danger
+      color=success
       expand=block
       size=large
       fill=solid
       class="clickbutton"
-      (click)="buttonclick()"
-      [disabled]="!sensor1value || !sensor2value || !sensor3value">START MOTORCYCLE</ion-button>
+      (click)="startmotorcycle()"
+      [disabled]="!sensor1value || !sensor2value || !sensor3value">START MOTORCYCLE
+    </ion-button>
+
+    <ion-button
+      color=secondary
+      size=large
+      fill=solid
+      class="wifibutton"
+      (click)="gotowifi()"
+      >CONNECT TO WIFI
+    </ion-button>
 
 </ion-content>
 

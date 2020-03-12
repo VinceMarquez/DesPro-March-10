@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-wifi',
   templateUrl: './wifi.page.html',
   styleUrls: ['./wifi.page.scss'],
 })
-export class WifiPage implements OnInit {
+export class WifiPage {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
+  gotomain() {
+    this.router.navigate(['main']);
   }
 
 }

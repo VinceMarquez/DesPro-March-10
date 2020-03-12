@@ -10,12 +10,16 @@ export class MainPage{
 
   constructor(private router: Router) { }
   
-  buttonclick(){
+  startmotorcycle(){
     alert("VROOM VROOM");
     }
   
   gotohome(){
     this.router.navigate(['home']);
+  }
+
+  gotowifi(){
+    this.router.navigate(['wifi']);
   }
     
     
