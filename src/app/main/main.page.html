@@ -11,24 +11,23 @@
   <p>OWNER: VINCIBOI <br> PLATE NUMBER: 2033 UU</p>
   <br> <br><br>
     <div class="Sensors">
-      SENSOR 1 <ion-toggle color="tertiary" [(ngModel)]="sensor1value" class="sensortoggle1"></ion-toggle> <br>
-      SENSOR 2 <ion-toggle color="tertiary" [(ngModel)]="sensor2value" class="sensortoggle2"></ion-toggle> <br>
-      SENSOR 3 <ion-toggle color="tertiary" [(ngModel)]="sensor3value" class="sensortoggle3"></ion-toggle>
+      SENSOR 1<ion-toggle color="tertiary" [(ngModel)]="sensor1value" class="sensortoggle1"></ion-toggle> <br>
+      SENSOR 2<ion-toggle color="tertiary" [(ngModel)]="sensor2value" class="sensortoggle2"></ion-toggle> <br>
     </div>
 
    <ion-button
       color=success
       expand=block
-      size=large
+      size=default
       fill=solid
       class="clickbutton"
       (click)="startmotorcycle()"
-      [disabled]="!sensor1value || !sensor2value || !sensor3value">START MOTORCYCLE
+      [disabled]="!sensor1value || !sensor2value">START MOTORCYCLE
     </ion-button>
 
     <ion-button
       color=secondary
-      size=large
+      size=default
       fill=solid
       class="wifibutton"
       (click)="gotowifi()"
