@@ -29,14 +29,7 @@
   ion-content ion-toolbar {
     --background: black;
   }
-  
-  
-  p{padding-left: 70px;
-    font-family: Product Sans;
-    font-size: 60px;
-    color: black;
-  }
-  
+    
   .clickbutton{ position: absolute;
                 top: 1200px;
                 right: 40px;
@@ -61,12 +54,12 @@
                  zoom: 2;
                 }
   
-  .sensortoggle2{position: absolute;
-                 top: 220px;
-                 right: 150px;
-                 zoom: 2}
-  
-  .sensortoggle3{position: absolute;
-                 top: 265px;
-                 right: 150px;
-                 zoom: 2}
+  .sensortoggle2{
+                position:absolute;
+                left:60%;
+                 zoom: .8;
+                }
+
+ion-col{
+  --ion-grid-columns: 12;
+}

@@ -1,14 +1,31 @@
 <ion-header>
-  
   <ion-toolbar>
-    <header>
-      HELMET AUTHENTICATOR
-    </header>
+    <h3 class="text-center">
+        HELMET AUTHENTICATOR
+    </h3>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <p>OWNER: VINCIBOI <br> PLATE NUMBER: 2033 UU</p>
+<ion-content>
+  <br><br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="8">
+        <h4>OWNER: VINCIBOI</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="10">
+        <h4>PLATE NUMBER: 2033 UU</h4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
   <br> <br><br>
     <div class="Sensors">
       SENSOR 1 <ion-toggle color="tertiary" [(ngModel)]="sensor1value" class="sensortoggle1"></ion-toggle> <br>
