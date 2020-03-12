@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'wifi',
     loadChildren: () => import('./wifi/wifi.module').then( m => m.WifiPageModule)
   },
+  {
+    path: 'turnoff',
+    loadChildren: () => import('./turnoff/turnoff.module').then( m => m.TurnoffPageModule)
+  },
 
 ];
 

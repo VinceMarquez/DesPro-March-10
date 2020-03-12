@@ -11,7 +11,7 @@ export class MainPage{
   constructor(private router: Router) { }
   
   startmotorcycle(){
-    alert("VROOM VROOM");
+    this.router.navigate(['turnoff']);
     }
   
   gotohome(){
