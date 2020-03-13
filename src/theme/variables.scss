@@ -225,13 +225,17 @@
 
 }
 
-h6{
+
+h1{
   font-family: Product Sans;
-  color: white;}
+  color: black;
+}
 
 h3{
   font-family: Product Sans;
-  color: white;}
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;}
 
 h4{
   font-family: Product Sans;
@@ -240,4 +244,11 @@ h4{
 
 h5{
     font-family: Product Sans;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;}
+
+h6{
+    font-family: Product Sans;
     color: white;}
+    
