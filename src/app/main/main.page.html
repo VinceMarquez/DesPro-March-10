@@ -1,19 +1,51 @@
 <ion-header>
-  
   <ion-toolbar>
-    <header>
-      HELMET AUTHENTICATOR
-    </header>
+    <h3 class="ion-text-center">
+        HELMET AUTHENTICATOR
+    </h3>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <p>OWNER: VINCIBOI <br> PLATE NUMBER: 2033 UU</p>
-  <br> <br><br>
-    <div class="Sensors">
-      SENSOR 1<ion-toggle color="tertiary" [(ngModel)]="sensor1value" class="sensortoggle1"></ion-toggle> <br>
-      SENSOR 2<ion-toggle color="tertiary" [(ngModel)]="sensor2value" class="sensortoggle2"></ion-toggle> <br>
-    </div>
+  <br><br>
+
+<ion-grid>
+  <ion-row>
+    <ion-col offset=1 size=11>
+      <h4>OWNER: VINCE MARQUEZ</h4>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col offset=1 size=11>
+      <h4>PLATE NUMBER: 2033 UU</h4>
+    </ion-col>
+  </ion-row>
+
+  <br><br><br>
+
+  <ion-row>
+    <ion-col offset=2 size=4>
+      <h4>
+        SENSOR 1 
+      </h4>
+    </ion-col>
+    <ion-col size=2>
+      <ion-toggle class="sensor" color="success" [(ngModel)]="sensor1value"></ion-toggle>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col offset=2 size=4>
+      <h4>
+        SENSOR 2
+      </h4>
+    </ion-col>
+    <ion-col size=2>
+      <ion-toggle class="sensor" color="success" [(ngModel)]="sensor2value"></ion-toggle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
    <ion-button
       color=success
