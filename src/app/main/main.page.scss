@@ -31,45 +31,16 @@
   }
   
   
-  p{padding-left: 10%;
+  .buttons{
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: Product Sans;
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
   }
-  
-  .clickbutton{ position: absolute;
-                top: 70%;
-                right: 40px;
-                left: 40px;
-                font-size: 18px;
-                font-family: Product Sans;
-                }
-  
-  .wifibutton{ position: absolute;
-                top: 60%;
-                right: 40px;
-                left: 40px;
-                font-size: 18px;
-                font-family: Product Sans;
-                }
 
   .logoutbutton{font-size: 10px;
                 font-family: Product Sans;
-                right: 40px}
-  
-
-  
-  .sensortoggle1{
-                position:absolute;
-                 left:60%;
-                 zoom: .8;
-                }
-  
-  .sensortoggle2{
-                position:absolute;
-                left:60%;
-                 zoom: .8;
-                }
+              }
 
   .sensor{
     zoom:0.6;

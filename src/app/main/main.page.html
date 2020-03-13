@@ -25,7 +25,7 @@
   <br><br><br>
 
   <ion-row>
-    <ion-col offset=2 size=4>
+    <ion-col offset=3 size=4>
       <h4>
         SENSOR 1 
       </h4>
@@ -36,7 +36,7 @@
   </ion-row>
 
   <ion-row>
-    <ion-col offset=2 size=4>
+    <ion-col offset=3 size=4>
       <h4>
         SENSOR 2
       </h4>
@@ -45,26 +45,26 @@
       <ion-toggle class="sensor" color="success" [(ngModel)]="sensor2value"></ion-toggle>
     </ion-col>
   </ion-row>
+
+  <br><br><br>
+
 </ion-grid>
 
-   <ion-button
-      color=success
-      expand=block
-      size=default
-      fill=solid
-      class="clickbutton"
-      (click)="startmotorcycle()"
-      [disabled]="!sensor1value || !sensor2value">START MOTORCYCLE
-    </ion-button>
-
-    <ion-button
-      color=secondary
-      size=default
-      fill=solid
-      class="wifibutton"
-      (click)="open('wifi')"
-      >CONNECT TO WIFI
-    </ion-button>
+<div class="col ion-text-center">
+  <ion-button expand="block" color=secondary size=default fill=solid (click)="open('wifi')">
+    <div class="buttons">
+      CONNECT TO WIFI
+    </div>
+  </ion-button>
+</div>
+<br><br>
+<div class="col ion-text-center">
+  <ion-button expand="block" color=success size=default fill=solid (click)="startmotorcycle()" [disabled]="!sensor1value || !sensor2value">
+    <div class="buttons">
+      START MOTORCYCLE
+    </div>
+  </ion-button>
+</div>
 
 </ion-content>
 
@@ -74,5 +74,7 @@
         (click)="gotohome()"
         color=danger 
         shape=round
-        class="logoutbutton"> LOGOUT </ion-button>
+        class="logoutbutton"> 
+        LOGOUT 
+   </ion-button>
 </ion-footer>
