@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'turnoff',
     loadChildren: () => import('./turnoff/turnoff.module').then( m => m.TurnoffPageModule)
   },
+  {
+    path: 'password',
+    loadChildren: () => import('./password/password.module').then( m => m.PasswordPageModule)
+  },
 
 ];
 
