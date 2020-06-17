@@ -13,5 +13,4 @@ export class HomePage {
   gotomain() {
     this.router.navigate(['main']);
   }
-  
 }

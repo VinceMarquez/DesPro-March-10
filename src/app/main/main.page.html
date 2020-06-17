@@ -27,7 +27,7 @@
   <ion-row>
     <ion-col offset=3 size=4>
       <h4>
-        SENSOR 1 
+        Force Sensor
       </h4>
     </ion-col>
     <ion-col offset=0.5 size=1>
@@ -37,11 +37,21 @@
   <ion-row>
     <ion-col offset=3 size=4>
       <h4>
-        SENSOR 2
+        Tilt Sensor
       </h4>
     </ion-col>
     <ion-col offset=0.5 size=1>
       <ion-toggle mode=ios class="sensor" color="success" [(ngModel)]="sensor2value"></ion-toggle>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col offset=3 size=4>
+      <h4>
+        Touch Sensor
+      </h4>
+    </ion-col>
+    <ion-col offset=0.5 size=1>
+      <ion-toggle mode=ios class="sensor" color="success" [(ngModel)]="sensor3value"></ion-toggle>
     </ion-col>
   </ion-row>
 
@@ -58,13 +68,13 @@
 </div>
 <br><br>
 <div class="col ion-text-center">
-  <ion-button expand="block" color=warning size=default fill=solid [disabled]="!sensor1value || !sensor2value">
+  <ion-button expand="block" color=warning size=default fill=solid (click)="inputpassword()" [disabled]="!sensor1value || !sensor2value || !sensor3value">
     <div class="buttons">
       START MOTORCYCLE
     </div>
   </ion-button>
 
-  <ion-button expand="block" color=success size=default fill=solid (click)="startmotorcycle()" [disabled]="!sensor1value || !sensor2value">
+  <ion-button expand="block" color=success size=default fill=solid (click)="startmotorcycle()" [disabled]="!sensor1value || !sensor2value || !sensor3value">
     <div class="buttons">
       START ENGINE
     </div>

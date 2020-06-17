@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { OpenNativeSettings } from '@ionic-native/open-native-settings/ngx';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-main',
@@ -9,10 +10,14 @@ import { OpenNativeSettings } from '@ionic-native/open-native-settings/ngx';
 })
 export class MainPage{
 
-  constructor(private openNativeSettings: OpenNativeSettings, private router: Router) { }
+  constructor(private openNativeSettings: OpenNativeSettings, private router: Router, public alertController: AlertController) { }
   
   startmotorcycle(){
     this.router.navigate(['turnoff']);
+    }
+  
+  inputpassword(){
+
     }
   
   gotohome(){
